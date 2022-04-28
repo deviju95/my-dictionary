@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="sample"><button id="changeColor"></button></section>
+    <section id="user-extension-settings">
+      <div class="settings__container">
+        <div class="settings__row">
+          <div class="toggle-switch-wrapper">
+            <label for="on-hover-switch" class="toggle-switch__label"
+              >Show dictionary on mouse hover</label
+            >
+            <input
+              id="on-hover-switch"
+              class="toggle-switch__input"
+              type="checkbox"
+              checked
+            />
+            <label for="on-hover-switch" class="toggle-switch__slider"></label>
+          </div>
+        </div>
+        <div class="settings__row">
+          <div class="toggle-switch-wrapper">
+            <label for="dark-mode-switch" class="toggle-switch__label"
+              >Dark mode</label
+            >
+            <input
+              id="dark-mode-switch"
+              class="toggle-switch__input"
+              type="checkbox"
+            />
+            <label for="dark-mode-switch" class="toggle-switch__slider"></label>
+          </div>
+        </div>
+        <div class="settings__row">
+          <div class="number-input-wrapper">
+            <label for="font-size-input" class="number-input__label"
+              >Font size (px)</label
+            >
+            <input
+              id="font-size-input"
+              class="number-input__input"
+              type="number"
+              value="12"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="popup.js"></script>
+  </body>
+</html>
